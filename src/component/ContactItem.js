@@ -1,19 +1,19 @@
 import React from 'react'
-import {Row, Col} from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
-const ContactItem = () => {
+const ContactItem = ({ item }) => {
   return (
-    <Row>
+    <Row className='contact-item'>
       <Col lg={1}>
-        <img width={50} src="https://wplaboratory.in/wplabadmin/Login_logo.png"/>
+        <img width={50} src="https://st4.depositphotos.com/7752738/22685/v/450/depositphotos_226857182-stock-illustration-user-icon-vector-line-outline.jpg" />
       </Col>
       <Col lg={9}>
-      <div>
-        오승택
-      </div>
-      <div>
-        010-1231-1231
-      </div>
+        <div className='contact-info'>
+          {item.name}
+        </div>
+        <div className='contact-info'>
+          {item.phoneNumber}
+        </div>
       </Col>
     </Row>
   )

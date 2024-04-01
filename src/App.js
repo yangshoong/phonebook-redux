@@ -11,8 +11,8 @@ import ContactList from './component/ContactList';
 
 function App() {
   return (
-    <div>
-      <h1 className="title"> 연락처</h1>
+    <Container>
+      <h1 className="title"> 주소록</h1>
       <Container>
         <Row>
           <Col>
@@ -23,7 +23,7 @@ function App() {
           </Col>
         </Row>
       </Container>
-    </div>
+    </Container>
   );
 }
 
